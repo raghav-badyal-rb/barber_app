@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "121049807355",
+    "project_id": "barber-cda96",
+    "storage_bucket": "barber-cda96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121049807355:android:52c08228a891ba05f1f35e",
+        "android_client_info": {
+          "package_name": "com.prabhat.barber_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8on7Dp3GSSHyM0wrlqP8Ujkaupj7sqI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

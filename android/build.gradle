@@ -1,0 +1,46 @@
+buildscript {
+    ext.kotlin_version = '1.9.20'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Android Gradle plugin for building Android apps
+        classpath 'com.android.tools.build:gradle:7.0.3'
+        
+        // Kotlin plugin for Kotlin language support
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31'
+        
+        // Google Services plugin for integrating Firebase services
+        classpath 'com.google.gms:google-services:4.4.2'
+        
+        // Add other build script dependencies as needed
+    }
+}
+
+plugins {
+    // Add the dependency for the Google services Gradle plugin
+    id("com.google.gms.google-services") version "4.4.2" apply false
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // Add more repositories if needed
+    }
+}
+
+rootProject.buildDir = '../build'
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

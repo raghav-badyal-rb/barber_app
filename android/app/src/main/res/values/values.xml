@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">YOUR_WEB_CLIENT_ID</string>
+    <string name="firebase_database_url" translatable="false">https://console.firebase.google.com/u/0/project/barberapp-e9d76/firestore/databases/-default-/data/~2F</string>
+    <string name="gcm_defaultSenderId" translatable="false">253102535124</string>
+    <string name="google_api_key" translatable="false">AIzaSyBQiK_dMwM2vlV1CNGpeMzSo00m_fJkTtA</string>
+    <string name="google_app_id" translatable="false">1:253102535124:android:6d3e2ce36dc3ce9dabe641</string>
+    <!-- Replace the value below if you have a Crash Reporting API Key -->
+    <string name="google_crash_reporting_api_key" translatable="false"></string>
+    <string name="project_id" translatable="false">barberapp-e9d76</string>
+</resources>
